@@ -1,6 +1,5 @@
 # news grabber
 import requests
-import json
 
 def news_search(API, term, lang = "en", country = "us"):
 	content = requests.get('https://gnews.io/api/v4/search?q='+term+'&token='+API+'&lang='+lang+'&country='+country)
